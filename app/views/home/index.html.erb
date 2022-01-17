@@ -1,2 +1,12 @@
+
+<%= link_to "Pessoa", new_person_path %>
 <h1>Home#index</h1>
 <p>Find me in app/views/home/index.html.erb</p>
+<p>
+	<% @countries.each do |country| %>
+	<p>
+	  <%= country.iso_short_name%>
+	</p>
+		
+	<% end %>	
+</p>
